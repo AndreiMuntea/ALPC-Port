@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ntapi">
+      <UniqueIdentifier>{2109f8f3-d11c-4bb5-b1d6-c8b09888adb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ntapi\native">
+      <UniqueIdentifier>{c39d5d24-dcc1-4a1d-ae34-82f5b948f356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alpc">
+      <UniqueIdentifier>{1d216f04-9d28-49ed-82f6-a74b1267df52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alpc\transport">
+      <UniqueIdentifier>{cfabd813-936f-4905-81d3-d8f75f7c37cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alpc">
+      <UniqueIdentifier>{cbaaa993-7a0a-463a-a2db-2a4732f606cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alpc\transport">
+      <UniqueIdentifier>{85e6bb23-4bef-4aa1-8b03-cf039441a275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alpc\transport\message">
+      <UniqueIdentifier>{e5f8433a-4248-43f9-a9a4-63e22d26ab1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alpc\transport\message">
+      <UniqueIdentifier>{0f884346-fca6-490b-826e-b2f6d0e02b98}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alpc_message_attributes.cpp">
+      <Filter>Source Files\alpc\transport\message</Filter>
+    </ClCompile>
+    <ClCompile Include="alpc_message.cpp">
+      <Filter>Source Files\alpc\transport\message</Filter>
+    </ClCompile>
+    <ClCompile Include="alpc_transport_base.cpp">
+      <Filter>Source Files\alpc\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="alpc_server.cpp">
+      <Filter>Source Files\alpc\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="alpc_client.cpp">
+      <Filter>Source Files\alpc\transport</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ntinclude.h">
+      <Filter>Header Files\ntapi</Filter>
+    </ClInclude>
+    <ClInclude Include="ntalpc.h">
+      <Filter>Header Files\ntapi\native</Filter>
+    </ClInclude>
+    <ClInclude Include="ntalpcapi.h">
+      <Filter>Header Files\ntapi\native</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdefs.h">
+      <Filter>Header Files\ntapi\native</Filter>
+    </ClInclude>
+    <ClInclude Include="alpc_message_attributes.hpp">
+      <Filter>Header Files\alpc\transport\message</Filter>
+    </ClInclude>
+    <ClInclude Include="alpc_message.hpp">
+      <Filter>Header Files\alpc\transport\message</Filter>
+    </ClInclude>
+    <ClInclude Include="alpc_transport_base.hpp">
+      <Filter>Header Files\alpc\transport</Filter>
+    </ClInclude>
+    <ClInclude Include="alpc_server.hpp">
+      <Filter>Header Files\alpc\transport</Filter>
+    </ClInclude>
+    <ClInclude Include="alpc_client.hpp">
+      <Filter>Header Files\alpc\transport</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
