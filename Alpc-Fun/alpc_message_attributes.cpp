@@ -10,7 +10,7 @@ AlpcMessageAttributesInitialize(
     *MessageAttributes = nullptr;
 
     // First we compute the needed size
-    ULONG requiredSize = 0;
+    SIZE_T requiredSize = 0;
     auto status = AlpcInitializeMessageAttribute(
         MessageAttributesFlags,     // [in] AttributeFlags : ULONG
         nullptr,                    // [out opt] Buffer : PALPC_MESSAGE_ATTRIBUTES
@@ -36,8 +36,8 @@ AlpcMessageAttributesInitialize(
     status = AlpcInitializeMessageAttribute(
         MessageAttributesFlags,     // [in] AttributeFlags : ULONG
         messageAttributes,          // [out opt] Buffer : PALPC_MESSAGE_ATTRIBUTES
-        requiredSize,               // [in] BufferSize : ULONG
-        &requiredSize               // [out] RequiredBufferSize : PULONG
+        requiredSize,               // [in] BufferSize : SIZE_T
+        &requiredSize               // [out] RequiredBufferSize : PSIZE_T
     );
     if (!NT_SUCCESS(status))
     {

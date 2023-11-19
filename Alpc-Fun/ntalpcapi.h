@@ -33,7 +33,7 @@ NtAlpcConnectPort(
     _In_ ULONG Flags,
     _In_opt_ PSID RequiredServerSid,
     _Inout_updates_bytes_to_opt_(*BufferLength, *BufferLength) PPORT_MESSAGE ConnectionMessage,
-    _Inout_opt_ PULONG BufferLength,
+    _Inout_opt_ PSIZE_T BufferLength,
     _Inout_opt_ PALPC_MESSAGE_ATTRIBUTES OutMessageAttributes,
     _Inout_opt_ PALPC_MESSAGE_ATTRIBUTES InMessageAttributes,
     _In_opt_ PLARGE_INTEGER Timeout
@@ -115,8 +115,8 @@ NTSTATUS NTAPI
 AlpcInitializeMessageAttribute(
     _In_ ULONG AttributeFlags,
     _Out_opt_ PALPC_MESSAGE_ATTRIBUTES Buffer,
-    _In_ ULONG BufferSize,
-    _Out_ PULONG RequiredBufferSize
+    _In_ SIZE_T BufferSize,
+    _Out_ PSIZE_T RequiredBufferSize
 );
 
 EXTERN_C_END

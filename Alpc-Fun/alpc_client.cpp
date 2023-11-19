@@ -35,7 +35,7 @@ AlpcClient::ConnectToAlpcPort(
 )
 {
     PALPC_CUSTOM_MESSAGE connectMessage = nullptr;
-    ULONG connectMessageLength = 0;
+    SIZE_T connectMessageLength = 0;
     ALPC_PORT_ATTRIBUTES alpcPortAttributes = { 0 };
     
     InitializeAlpcPortAttributes(alpcPortAttributes);
@@ -55,7 +55,7 @@ AlpcClient::ConnectToAlpcPort(
         ALPC_MESSAGE_FLAGS::kAlpcMessageFlagSyncRequest,    // [in] Flags : ULONG
         nullptr,                                            // [in opt] RequiredServerSid : PSID
         &connectMessage->Header,                            // [inout opt] ConnectionMessage : PPORT_MESSAGE
-        &connectMessageLength,                              // [inout opt] BufferLength : PULONG
+        &connectMessageLength,                              // [inout opt] BufferLength : PSIZE_T
         nullptr,                                            // [inout opt] OutMessageAttributes : PALPC_MESSAGE_ATTRIBUTES
         nullptr,                                            // [inout opt] InMessageAttributes : PALPC_MESSAGE_ATTRIBUTES
         nullptr                                             // [in opt] Timeout : PLARGE_INTEGER
